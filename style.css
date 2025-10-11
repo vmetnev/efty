@@ -5,23 +5,19 @@
 }
 
 body {
-
-
-
-
-
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth"100;
-
-
-
-
     background-color: white;
     height: 100vh;
+    height: 100dvh;
+    /* Modern viewport height for mobile */
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 .main {
@@ -117,7 +113,7 @@ h5 {
 /* Final message (m4) - positioned relative to the image */
 .m4 {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     right: 20px;
     color: white;
     opacity: 0;
