@@ -110,6 +110,44 @@ h5 {
     opacity: 1;
 }
 
+/* Phone link - positioned at top right of image */
+.phone-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    transition: opacity 2s ease-in-out, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.phone-link.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.phone-link:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.phone-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
 /* Hide elements initially */
 .hidden {
     opacity: 0;
