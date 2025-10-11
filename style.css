@@ -113,7 +113,7 @@ h5 {
 /* Final message (m4) - positioned relative to the image */
 .m4 {
     position: absolute;
-    bottom: 15px;
+    bottom: 11px;
     right: 20px;
     color: white;
     opacity: 0;
