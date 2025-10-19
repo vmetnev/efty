@@ -78,14 +78,15 @@
                 });
 
 
-
-                document.body.addEventListener('touchstart', initAudio, {
-                    once: true
-                });
-                document.body.addEventListener('click', initAudio, {
-                    once: true
-                });
-
+                setTimeout(() => {
+                    audio.currentTime = 0;
+                    document.body.addEventListener('touchstart', initAudio, {
+                        once: true
+                    });
+                    document.body.addEventListener('click', initAudio, {
+                        once: true
+                    });
+                }, 2000);
 
 
             } else {
@@ -101,16 +102,15 @@
                 });
 
 
-
-                document.body.addEventListener('touchstart', initAudio, {
-                    once: true
-                });
-                document.body.addEventListener('click', initAudio, {
-                    once: true
-                });
-
-
-
+                setTimeout(() => {
+                    audio.currentTime = 0;
+                    document.body.addEventListener('touchstart', initAudio, {
+                        once: true
+                    });
+                    document.body.addEventListener('click', initAudio, {
+                        once: true
+                    });
+                }, 2000);
             }
         }
 
