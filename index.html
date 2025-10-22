@@ -12,7 +12,34 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Eftychia</title>
+
+    <!-- Basic HTML meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title and Description -->
+    <title>Eftychia mou</title>
+    <meta name="description" content="Web site dedicated to Eftychia. The one that I loved and deeply cared for.">
+
+    <!-- Robots (controls indexing and crawling) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eftymou.com/">
+
+    <!-- Language -->
+    <meta http-equiv="Content-Language" content="en">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+    <!-- Open Graph (for social sharing and preview cards) -->
+    <meta property="og:title" content="Eftymou site">
+    <meta property="og:description" content="Site dedicated to Eftychia.">
+    <meta property="og:url" content="https://eftymou.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eftymou.com/og-preview.jpg">
+
     <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-657LFYZCBH"></script>
@@ -25,6 +52,23 @@
         gtag('js', new Date());
 
         gtag('config', 'G-657LFYZCBH');
+    </script>
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-XXXXXXX');
     </script>
 
 </head>
